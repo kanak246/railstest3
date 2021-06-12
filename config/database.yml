@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # COPY THESE THREE LINES INTO SAME PLACE IN config/database.yml if you create new project
+  # sudo service postgresql start
   port: 5433
   password: password
   user: kanak
